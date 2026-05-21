@@ -21,7 +21,7 @@ const navTo = (id) => {
       <nav>
       <span className={s.navItems} onClick={() => navTo("s1")}>
         <i class="fa-solid fa-house"></i>
-        <a href='#s1' className={s.navWords}>Jogo</a>
+        <a href='#s1' className={s.navWords}>Inicio</a>
       </span>
       <span className={s.navItems} onClick={() => navTo("s2")}>
         <i class="fa-solid fa-car-side"></i>
@@ -80,7 +80,7 @@ const navTo = (id) => {
           <input type="text" id="nome" placeholder="Digite seu nome"/>
           <label for="assunto">Mensagem:</label>
           <textarea id="assunto" placeholder="Digite uma mensagem"></textarea>
-          <button onclick="enviar()">ENVIAR</button>
+          <button className={s.botao} onclick="enviar()">ENVIAR</button>
         </div>
         <div>
           <div id="saturno-container"></div>
