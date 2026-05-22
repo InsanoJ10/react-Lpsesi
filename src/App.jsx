@@ -18,7 +18,7 @@ const navTo = (id) => {
 
   return (
     <>
-      <nav>
+      {/* <nav>
       <span className={s.navItems} onClick={() => navTo("s1")}>
         <i class="fa-solid fa-house"></i>
         <a href='#s1' className={s.navWords}>Inicio</a>
@@ -35,7 +35,33 @@ const navTo = (id) => {
         <i class="fa-solid fa-phone"></i>
         <a href='#s4' className={s.navWords}>Contato</a>
       </span>
-    </nav>
+    </nav> */}
+    <nav classname="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+            
+    
     <main>
       <section className={s.s1} id="s1">
         <h1>DOOM</h1>
